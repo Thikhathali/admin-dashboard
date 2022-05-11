@@ -148,7 +148,7 @@
 }
 
 .sideNav-bar .config {
-  margin-top: 60px;
+  margin-top: 50px;
   height: 100px;
   display: -ms-grid;
   display: grid;
@@ -159,9 +159,111 @@
 .main-content {
   display: -ms-grid;
   display: grid;
+  gap: 40px;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  overflow: auto;
   background: #dad8d8;
   padding-left: 40px;
   padding-top: 10px;
+}
+
+.main-content .project {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 50px (300px)[3];
+      grid-template-rows: 50px repeat(3, 300px);
+}
+
+.main-content .project .projects {
+  height: 290px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  border-left: 10px solid yellowgreen;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.main-content .project .projects .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+.main-content .project .projects > p {
+  width: 300px;
+}
+
+.main-content .project > h3 {
+  grid-column: span 2;
+  margin-top: 30px;
+}
+
+.main-content .main-col2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 70px 450px 50px 430px;
+      grid-template-rows: 70px 450px 50px 430px;
+}
+
+.main-content .main-col2 .announcement {
+  width: 350px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.main-content .main-col2 .announcement > div {
+  padding-bottom: 20px;
+  margin-top: 10px;
+  border-bottom: 1px solid #777;
+}
+
+.main-content .main-col2 .announcement :last-child {
+  border: none;
+}
+
+.main-content .main-col2 .trending-title {
+  margin-top: 50px;
+}
+
+.main-content .main-col2 > h3 {
+  grid-column: span 2;
+  margin-top: 30px;
+}
+
+.main-content .main-col2 .trending {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 40px;
+  width: 350px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+  -ms-grid-columns: 50px auto;
+      grid-template-columns: 50px auto;
+  gap: 5px;
+}
+
+.main-content .main-col2 .trending_avatar {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: yellowgreen;
 }
 
 body {
